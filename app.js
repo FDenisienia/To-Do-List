@@ -15,15 +15,18 @@ const agregarTarea = (event) => {
 
     let inputValue = document.createElement('p')
     inputValue.classList.add('p-list')
-
+    const inputCheck = document.createElement('input')
+    inputCheck.setAttribute('type', 'checkbox')
+    inputCheck.classList.add('checkbox')
     const btnCerrar = document.createElement('button')
     btnCerrar.classList.add('btn-cerrar')
 
-    btnCerrar.innerHTML = 'X'
+    btnCerrar.innerHTML = 'x'
     inputValue.innerHTML = input
 
     divContenedor.appendChild(inputValue)
     divContenedor.appendChild(btnCerrar)
+    divContenedor.appendChild(inputCheck)
 
     containerList.appendChild(divContenedor)
 
